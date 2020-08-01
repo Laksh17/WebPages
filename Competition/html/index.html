@@ -8,14 +8,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>>
+    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
     <link rel="stylesheet" href="../css/styles.css">
-<!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/2f388e4078.js" crossorigin="anonymous"></script>	
+    <script src="https://kit.fontawesome.com/2f388e4078.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>	
     <title>Panache Restaurants</title>
 </head>
 <body>
@@ -25,19 +26,19 @@
   		<i class="fas fa-minus" id="cancel"></i>
   	</label>
 	<div class="sidebar">
-		<header>Panache App</header>	
+		<header id="header">Panache App</header>	
 			<ul>
-				<li id="special"><a href="#"><i class="fas fa-link"></i>&nbsp;Shortcuts</a></li>
-				<li><a href="#"><i class="fas fa-award"></i>&nbsp;Awards</a></li>
-				<li><a href="#"><i class="fas fa-question-circle"></i>&nbsp;About</a></li>
-				<li><a href="#"><i class="fas fa-sliders-h"></i>&nbsp;Services</a></li>
-				<li><a href="#"><i class="fas fa-envelope"></i>&nbsp;Contact</a></li>
+				<li id="special"><a href="#call-history"><i class="fas fa-landmark"></i>&nbsp;History</a></li>
+				<li><a href="#call-award"><i class="fas fa-award"></i>&nbsp;Awards</a></li>
+				<li><a href="#call-about"><i class="fas fa-question-circle"></i>&nbsp;About</a></li>
+				<li><a href="#call-menu"><i class="fas fa-utensils"></i>&nbsp;Menu</a></li>
+				<li><a href="#call-contact"><i class="fas fa-envelope"></i>&nbsp;Contact</a></li>
 			</ul>
 	</div>
 	<h1>Panache Restaurants</h1>
 	<div class="container">
 	<section>
-		<h2>History</h2>
+		<h2 id="call-history">History</h2>
 		<div class="row">
 		<p class="col-md-6">
 		Panache was a restaurant started by Van Louie and his wife Michelle in the year 1879. With a small budget and not more than half an acre of land, he started his business with the main aim of catering to as many people as he could by satisfying their unique tastes. His restaurant soon became popular but suffered heavy losses during the world wars due to shortage of produce. It was reopened in the year 1967 with the same intention of achieveing the very aims it once had. 
@@ -47,28 +48,96 @@
 		</p>
 		</div>
 	</section>
+	<section id="call-award">
+		<h2>Awards</h2>
+		<ul id="award">
+		<li><i class="fas fa-trophy"></i>&nbsp;&nbsp;Won the Best Fine Dining Restaurant Award (France) for the year 2006</li>
+		<li><i class="fas fa-trophy"></i>&nbsp;&nbsp;Won the Signature Dish Award for the year 2008</li>
+		<li><i class="fas fa-trophy"></i>&nbsp;&nbsp;Won the Best Fine Dining Restaurant Award (France) for the year 2013</li>
+		</ul></br>
+		<div class="row">
+			<aside class="col-md-6"><img src="../images/Chef.jpg" width="300px" height="300px" alt="Chefs Celebrate"></aside>
+			<aside id="chefs" class="col-md-6"><img src="../images/Award.jpg" width="300px" height="300px" alt="Award"></aside>
+		</div>
+	
+	
+	</section>
 	<section>
-		<h2>About</h2>
+		<h2 id="call-about">About</h2>
 		<div class="row">
 		<article class="col-md-4">
 		<img id="image" src="../images/veggies.jpg" width="200px" height="200px"
 		alt="Vegetables"></br>
+		<h3>Veggies</h3>
 		<p>We at Panache always believe that the freshness and quality of a restaurant's vegetables can either make or break the dish served. Therefore, our chefs always make use of the most fresh produce there is to create their signanture delicacies.</p>
 		</article>
 		<article class="col-md-4">
 		<img id="image" width="200px" height="200px" src="../images/dairy.jpg" alt="Dairy"></br>
+		<h3>Dairy</h3>
 		<p>We believe that our dairy is worth boasting about simply because of the fact that our supply of milk comes from three of the most trusted farms in this town. We have a special class of chefs dedicated to use the milk to create other essential diary products like cheese, butter, etc,.</p>
 		</article>
 		<article class="col-md-4">
 		<img id="image" width="200px" height="200px" src="../images/bakery.jpg" alt="Bakery"></br>
+		<h3>Bakery</h3>
 		<p>Another noteworthy sector of our restaurant is our baking department. Our breads contain no artificial agents and almost 90% of our breads are gluten free in order to cater to the health conscious diners. The goodness of your grandma's baking is all packed in here too :)</p>
 		</article>
 		</div>
 	</section>
 	<section>
-	  <!-- Needs to be filled -->
+		<h2 id="call-menu">Menu</h2>
+			<article class='row'>
+				<aside class='col-sm-6 food' ><img src="../images/appetizer.jpg" alt="appetizer"></br>
+				<h3>Starters</h3>
+				<p>"The perfect start to your dining experience"</p>
+				<p>Signature Dish: Bite-sized Tikkis with assorted toppings</p>
+				</aside>
+				<aside class='col-sm-6 food'><img src="../images/entree.jpg" alt="entree"></br>
+				<h3>Entrée</h3>
+				<p>"Pleasing your senses while filling you with goodness"</p>
+				<p>Signature Dish: Spicy Omelettes with a Robust Salad</p>
+				</aside>
+				<aside class='col-sm-6 food' class="bottom-tile"><img src="../images/desserts.jpg" alt="dessert"></br>
+				<h3>Desserts</h3>
+				<p>"Of course, we can't forget about the sweet tooth ;)"</p>
+				<p>Signature Dish: Choco-molten Icecream with Chocolate Mousse</p>
+				</aside>
+				<aside class='col-sm-6 food' class="bottom-tile"><img src="../images/all-in-one.jpg" alt="all-in-one"></br>
+				<h3>All-In-One</h3>
+				<p>"If its one wholesome and scrumptious meal you crave, we gotcha covered"</p>
+				<p>Signature Dish: Chinese Vegetable Stew (served with fine rice)</p>
+				</aside>
+			</article>
+	
 	</section>
 	</div>
+	<footer class="row" id="call-contact">
+		
+		<section class="col-12" id="contact">
+		<form action="#header">
+			 <label for="email" id="email-info">Enter your E-mail address to receive info about current Discounts and Coupons</label></br>
+   			 <input type="email" id="email" name="email-id" placeholder="For example: John@123mails.com">
+   			 <input type="submit" onclick="thanks()" id="submit" value="Submit"></br>
+   			 <span>Address: DELTA, 48 Boulevard Jourdan,
+   			  75014 Paris, France.</span>
+   		</form>
+   		</section>
+		<section class="col-6" id="extra-info-1">
+			<h4>Timings:</h4>
+			<ul>
+				<li>Mon-Fri: 9:00 AM to 2:00 PM</li>
+				<li>Sat and Sun: 9:30 AM to 4:00 PM</li>
+			</ul>
+		</section>
+		<section class="col-6" id="extra-info-2">
+			<h4>Or get in touch with us on:</h4>
+			<ul>
+				<li>+33-1-09-75-83-51</li>
+				<li>+33-1-09-75-83-52</li>
+				<li>*Takeaways are available</li>
+			</ul>
+		</section>
+	</footer>
+
     
     
   </body>
